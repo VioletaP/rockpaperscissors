@@ -5,6 +5,7 @@ computer_win_count=0
 loop do
   puts "Insert your choice: R, P, S"
   human=gets.chomp
+  # chomp се слага, за да махне /n (интервала), който винаги се получава при gets
   if not possible_choices.include?(human)
     #ако списъка possible_choices съдържа Human, то тогава методът include? ще върне истина
     puts "Your choice is not correct. Try again!"
